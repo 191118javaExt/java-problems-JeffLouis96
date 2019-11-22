@@ -6,6 +6,8 @@ import java.util.Map;
 
 public class EvaluationService {
 
+	
+
 	/**
 	 * 1. Without using the StringBuilder or StringBuffer class, write a method that
 	 * reverses a String. Example: reverse("example"); -> "elpmaxe"
@@ -14,8 +16,23 @@ public class EvaluationService {
 	 * @return
 	 */
 	public String reverse(String string) {
+		String k = string;
+	char [] x = new char[string.length()];
+	
+	int count = string.length()-1;
+		for(int i = 0; i < k.length(); i++)
+		{
+			
+		x[i]= string.charAt(count);
+		count--;
 		
-		return "";
+			
+	
+		}
+		String str= new String(x);
+		System.out.println(x);
+		
+		return str ;
 	}
 
 	/**
@@ -28,6 +45,18 @@ public class EvaluationService {
 	 */
 	public String acronym(String phrase) {
 		// TODO Write an implementation for this method declaration
+		String Str = phrase;
+		
+		 String[] arr = Str.split(" |-");
+		
+		  for (int x = 0; x < arr.length; x++) {
+	          
+	        
+	          
+	        char result = arr[x].charAt(1);
+	    System.out.print(result);
+	      
+		
 		return null;
 	}
 
@@ -43,7 +72,8 @@ public class EvaluationService {
 	static class Triangle {
 		private double sideOne;
 		private double sideTwo;
-		private double sideThree;
+		private double sideThree;bbb bn
+		1
 
 		public Triangle() {
 			super();
@@ -539,3 +569,4 @@ public class EvaluationService {
 	}
 
 }
+
